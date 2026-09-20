@@ -38,3 +38,12 @@ This project was created to practice Python GUI development, event handling, fil
 A Windows executable can be created using PyInstaller:
 
 pyinstaller --onefile --windowed calculator.py
+
+## Download
+
+You can download the Windows application from the
+[Releases](../../releases) section.
+
+### Windows
+
+Download `calc.exe` and run the application.

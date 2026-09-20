@@ -25,6 +25,7 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setStyleSheet(u"background-color:#0a0211;\n"
         "border:None;")
+
         self.gridLayout_3 = QGridLayout(self.centralwidget)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
 
@@ -40,11 +41,12 @@ class Ui_MainWindow(object):
         font.setUnderline(True)
         self.label.setFont(font)
         self.label.setStyleSheet(u"color:#d1d11f;")
-
         self.gridLayout_2.addWidget(self.label, 0, 0, 1, 1)
 
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
+
+
         self.hist_title = QLabel(self.centralwidget)
         self.hist_title.setObjectName(u"hist_title")
         font1 = QFont()
@@ -59,7 +61,6 @@ class Ui_MainWindow(object):
         "#hist_title:hover{\n"
         "background-color:#292929;\n"
         "}")
-
         self.horizontalLayout.addWidget(self.hist_title)
 
         self.btn_hist_clear = QPushButton(self.centralwidget)
@@ -70,16 +71,13 @@ class Ui_MainWindow(object):
         icon = QIcon()
         icon.addFile(u"clear.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.btn_hist_clear.setIcon(icon)
-
         self.horizontalLayout.addWidget(self.btn_hist_clear)
-
-
         self.gridLayout_2.addLayout(self.horizontalLayout, 0, 1, 1, 1)
+
 
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setSpacing(1)
         self.verticalLayout.setObjectName(u"verticalLayout")
-
         self.input_fild = QLineEdit(self.centralwidget)
         self.input_fild.setObjectName(u"input_fild")
         sizePolicy = QSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
@@ -98,8 +96,8 @@ class Ui_MainWindow(object):
         "color:white;\n"
         "}")
         self.input_fild.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
-
         self.verticalLayout.addWidget(self.input_fild)
+
 
         self.input_fild1 = QLineEdit(self.centralwidget)
         self.input_fild1.setObjectName(u"input_fild1")
@@ -113,8 +111,8 @@ class Ui_MainWindow(object):
         "color:white;\n"
         "}")
         self.input_fild1.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
-
         self.verticalLayout.addWidget(self.input_fild1)
+
 
         self.label_3 = QLabel(self.centralwidget)
         self.label_3.setObjectName(u"label_3")
@@ -124,10 +122,7 @@ class Ui_MainWindow(object):
         self.label_3.setFont(font3)
         self.label_3.setStyleSheet(u"color:white;")
         self.label_3.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
-
         self.verticalLayout.addWidget(self.label_3)
-
-
         self.gridLayout_2.addLayout(self.verticalLayout, 1, 0, 1, 1)
 
         self.listView = QListView(self.centralwidget)
@@ -151,16 +146,16 @@ class Ui_MainWindow(object):
             background-color: #3498db;
             color: white;
         }
-    """)
-
+        """)
         self.gridLayout_2.addWidget(self.listView, 1, 1, 2, 1)
+
+
 
         self.gridLayout = QGridLayout()
         self.gridLayout.setSpacing(1)
         self.gridLayout.setObjectName(u"gridLayout")
 
-# ===== Main button import here ======
-        
+
         self.btn_9 = QPushButton(self.centralwidget)
         self.btn_9.setObjectName(u"btn_9")
         sizePolicy.setHeightForWidth(self.btn_9.sizePolicy().hasHeightForWidth())
@@ -177,7 +172,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929 ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_9, 1, 2, 1, 1)
 
         self.btn_8 = QPushButton(self.centralwidget)
@@ -193,7 +187,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929 ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_8, 1, 1, 1, 1)
 
         self.btn_add = QPushButton(self.centralwidget)
@@ -212,7 +205,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929  ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_add, 2, 3, 1, 1)
 
         self.btn_5 = QPushButton(self.centralwidget)
@@ -227,7 +219,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929 ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_5, 2, 1, 1, 1)
 
         self.btn_sub = QPushButton(self.centralwidget)
@@ -244,7 +235,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929  ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_sub, 1, 3, 1, 1)
 
         self.btn_div = QPushButton(self.centralwidget)
@@ -263,7 +253,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929  ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_div, 0, 1, 1, 1)
 
         self.btn_backspace = QPushButton(self.centralwidget)
@@ -279,10 +268,9 @@ class Ui_MainWindow(object):
         "background-color:#292929  ;\n"
         "}")
         icon1 = QIcon()
-        icon1.addFile(u"backspace.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon1.addFile(u":/newPrefix/backspace.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         self.btn_backspace.setIcon(icon1)
         self.btn_backspace.setIconSize(QSize(20, 20))
-
         self.gridLayout.addWidget(self.btn_backspace, 0, 3, 1, 1)
 
         self.btn_mul = QPushButton(self.centralwidget)
@@ -299,7 +287,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929  ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_mul, 0, 2, 1, 1)
 
         self.btn_3 = QPushButton(self.centralwidget)
@@ -315,7 +302,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929 ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_3, 3, 2, 1, 1)
 
         self.btn_6 = QPushButton(self.centralwidget)
@@ -331,7 +317,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929 ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_6, 2, 2, 1, 1)
 
         self.btn_2 = QPushButton(self.centralwidget)
@@ -347,7 +332,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929 ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_2, 3, 1, 1, 1)
 
         self.btn_dot = QPushButton(self.centralwidget)
@@ -363,7 +347,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929 ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_dot, 4, 2, 1, 1)
 
         self.btn_0 = QPushButton(self.centralwidget)
@@ -379,7 +362,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929 ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_0, 4, 1, 1, 1)
 
         self.btn_allclear = QPushButton(self.centralwidget)
@@ -396,7 +378,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929  ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_allclear, 0, 0, 1, 1)
 
         self.btn_7 = QPushButton(self.centralwidget)
@@ -412,7 +393,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929 ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_7, 1, 0, 1, 1)
 
         self.btn_4 = QPushButton(self.centralwidget)
@@ -428,7 +408,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929 ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_4, 2, 0, 1, 1)
 
         self.btn_1 = QPushButton(self.centralwidget)
@@ -444,7 +423,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929 ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_1, 3, 0, 1, 1)
 
         self.btn_mod = QPushButton(self.centralwidget)
@@ -460,7 +438,6 @@ class Ui_MainWindow(object):
         "QPushButton:hover{\n"
         "background-color:#292929 ;\n"
         "}")
-
         self.gridLayout.addWidget(self.btn_mod, 4, 0, 1, 1)
 
         self.btn_result = QPushButton(self.centralwidget)
@@ -475,7 +452,6 @@ class Ui_MainWindow(object):
         "background-color:#9CA000;\n"
         "}\n"
         "")
-
         self.gridLayout.addWidget(self.btn_result, 3, 3, 2, 1)
 
 
@@ -496,7 +472,6 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         QMetaObject.connectSlotsByName(MainWindow)
-
     # setupUi
 
     def retranslateUi(self, MainWindow):
@@ -505,8 +480,8 @@ class Ui_MainWindow(object):
         self.hist_title.setText(QCoreApplication.translate("MainWindow", u"History", None))
         self.btn_hist_clear.setText(QCoreApplication.translate("MainWindow", u"Clear", None))
         self.input_fild.setText("")
-        self.input_fild1.setText(QCoreApplication.translate("MainWindow", u"", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"", None))
+        self.input_fild1.setText(QCoreApplication.translate("MainWindow", u"12+12", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"24", None))
         self.btn_9.setText(QCoreApplication.translate("MainWindow", u"9", None))
         self.btn_8.setText(QCoreApplication.translate("MainWindow", u"8", None))
         self.btn_add.setText(QCoreApplication.translate("MainWindow", u"+", None))
@@ -526,7 +501,6 @@ class Ui_MainWindow(object):
         self.btn_1.setText(QCoreApplication.translate("MainWindow", u"1", None))
         self.btn_mod.setText(QCoreApplication.translate("MainWindow", u"%", None))
         self.btn_result.setText(QCoreApplication.translate("MainWindow", u"=", None))
-        # self.model.setStringList(QCoreApplication.translate("MainWindow", u"My list", None))
     # retranslateUi
 
 
@@ -547,8 +521,6 @@ class Mainwindow(QMainWindow):
         self.model.setStringList(self.history)
 
         self.result_shown = False
-
-        
 
         # ===== button connected =====
 

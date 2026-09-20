@@ -1,6 +1,6 @@
 # Calculator App
 
-A desktop calculator application built with Python, PySide6, and Qt Designer. The application provides a clean and user-friendly interface for performing basic mathematical calculations.
+A desktop calculator application built with Python, PySide6, JSON, and Qt Designer. The application provides a clean and user-friendly interface for performing basic mathematical calculations.
 
 # Features
 - Basic arithmetic operations: Addition, Subtraction, Multiplication, and Division
@@ -31,10 +31,10 @@ This project was created to practice Python GUI development, event handling, fil
 
 - Then run:
 
-- python calc.py
+- python calculator.py
 
 # Windows App
 
 A Windows executable can be created using PyInstaller:
 
-pyinstaller --onefile --windowed calc.py
+pyinstaller --onefile --windowed calculator.py

@@ -46,4 +46,4 @@ You can download the Windows application from the
 
 ### Windows
 
-Download `calc.exe` and run the application.
+Download `calculator.exe` and run the application.
